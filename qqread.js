@@ -78,7 +78,7 @@ qqreadtimeurlVal = cookiesArr[num].qqreadtimeurlVal;
  qqreadtimeheaderVal = cookiesArr[num].qqreadtimeheaderVal;
 $.num = num+ 1;
 console.log(`-------------------------\n\n开始企鹅阅读第${$.num}个账号阅读`) 
-   for (let i = 0; i < 4; i++) {
+   for (let i = 0; i < 5; i++) {
     (function (i) {
       setTimeout(
         function () {
