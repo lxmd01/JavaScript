@@ -78,63 +78,36 @@ qqreadtimeurlVal = cookiesArr[num].qqreadtimeurlVal;
  qqreadtimeheaderVal = cookiesArr[num].qqreadtimeheaderVal;
 $.num = num+ 1;
 console.log(`-------------------------\n\n开始企鹅阅读第${$.num}个账号阅读`) 
-   for (let i = 0; i < 15; i++) {
+   for (let i = 0; i < 4; i++) {
     (function (i) {
       setTimeout(
         function () {
           if (i == 0) {
             qqreadinfo(); // 用户名
-            qqreadwktime(); // 周时长查询
-            qqreadconfig(); // 时长查询
-          } else if (i == 1) qqreadtask();
-		  else if (
-            i == 2) qqreadtrack();
+	  qqreadtask();
+		  
+         
+          } else if (i == 1) 
+		 qqreadtrack();
           // 任务列表
-          else if (
-            i == 3 &&
-            config.data &&
-            config.data.pageParams.todayReadSeconds / 3600 <= maxtime
-          )
-            qqreadtime();
-          // 上传时长
-          else if (i == 4 && task.data && task.data.taskList[1].doneFlag == 0)
-            qqreadssr1();
-          // 阅读金币1
-          else if (i == 5 && task.data && task.data.taskList[2].doneFlag == 0) {
-            qqreadsign(); // 金币签到
-            qqreadtake(); // 阅豆签到
-          } else if (i == 6 && task.data && task.data.treasureBox.doneFlag == 0)
+   
+       
+ 
+          } else if (i == 2 && task.data && task.data.treasureBox.doneFlag == 0)
             qqreadbox();
           // 宝箱
-          else if (i == 7 && task.data && task.data.taskList[0].doneFlag == 0)
-            qqreaddayread();
-          // 阅读任务
-          else if (i == 8 && task.data && task.data.taskList[1].doneFlag == 0)
-            qqreadssr2();
-          // 阅读金币2
-          else if (i == 9) qqreadpick();
-          // 领周时长奖励
-          else if (i == 10 && task.data && task.data.taskList[3].doneFlag == 0)
-            qqreadvideo();
-          // 视频任务
-          else if (i == 11 && task.data && task.data.taskList[2].doneFlag == 0)
-            qqreadsign2();
-          // 签到翻倍
           else if (
-            i == 12 &&
+            i == 3 &&
             task.data &&
             task.data.treasureBox.videoDoneFlag == 0
           )
             qqreadbox2();
           // 宝箱翻倍
-          else if (i == 13 && task.data && task.data.taskList[1].doneFlag == 0)
-            qqreadssr3();
-          // 阅读金币3
-          else if (i == 14 && num< cookiesArr.length - 1) {
+          else if (i == 4 && num< cookiesArr.length - 1) {
             showmsg();//通知
 	   num += 1;
             all();
-          } else if (i == 14 && num == cookiesArr.length - 1) {
+          } else if (i == 4 && num == cookiesArr.length - 1) {
             showmsg(); // 通知
 	    console.log(`-------------------------\n\n企鹅阅读共完成${$.num}个账号阅读，阅读请求全部结束`)
         console.log(`============ 脚本执行完毕时间-北京时间(UTC+8)：${new Date(new Date().getTime() + 8 * 60 * 60 * 1000).toLocaleString()}  =============\n`)  
