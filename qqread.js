@@ -142,16 +142,10 @@ function qqreadtask() {
 
       tz +=
         `【现金余额】:${(task.data.user.amount / 10000).toFixed(2)}元\n` +
-        `【第${task.data.invite.issue}期】:时间${task.data.invite.dayRange}\n` +
-        ` 已邀请${task.data.invite.inviteCount}人，再邀请${task.data.invite.nextInviteConfig.count}人获得${task.data.invite.nextInviteConfig.amount}金币\n` +
-        `【${task.data.taskList[0].title}】:${task.data.taskList[0].amount}金币,${task.data.taskList[0].actionText}\n` +
-        `【${task.data.taskList[1].title}】:${task.data.taskList[1].amount}金币,${task.data.taskList[1].actionText}\n` +
-        `【${task.data.taskList[2].title}】:${task.data.taskList[2].amount}金币,${task.data.taskList[2].actionText}\n` +
-        `【${task.data.taskList[3].title}】:${task.data.taskList[3].amount}金币,${task.data.taskList[3].actionText}\n` +
+       
         `【宝箱任务${task.data.treasureBox.count + 1}】:${
           task.data.treasureBox.tipText
-        }\n` +
-        `【${task.data.fans.title}】:${task.data.fans.fansCount}个好友,${task.data.fans.todayAmount}金币\n`;
+        }\n`;
 
       resolve();
     });
