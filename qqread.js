@@ -84,7 +84,7 @@ console.log(`-------------------------\n\n开始企鹅阅读第${$.num}个账号
         function () {
           if (i == 0) {
             qqreadinfo(); // 用户名
-	  qqreadtask();
+	  //qqreadtask();
 		  
          
           } else if (i == 1) 
