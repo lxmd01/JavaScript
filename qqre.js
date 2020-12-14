@@ -93,11 +93,11 @@ console.log(`-------------------------\n\n开始企鹅阅读第${$.num}个账号
    
        
  
-          } else if (i == 2 && task.data.treasureBox.doneFlag == 0)
+          } else if (i == 2  && task.data && task.data.treasureBox.doneFlag == 0)
             qqreadbox();
           // 宝箱
           else if (
-            i == 3 &&
+            i == 3  && task.data &&
             task.data.treasureBox.videoDoneFlag == 0
           )
             qqreadbox2();
