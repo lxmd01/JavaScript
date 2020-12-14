@@ -124,33 +124,7 @@ console.log(`-------------------------\n\n开始企鹅阅读第${$.num}个账号
 
 
 
-// 任务列表
-function qqreadtask() {
-  return new Promise((resolve, reject) => {
-    const toqqreadtaskurl = {
-      url: "https://mqqapi.reader.qq.com/mqq/red_packet/user/page?fromGuid=",
-      headers: JSON.parse(qqreadtimeheaderVal),
 
-      timeout: 60000,
-    };
-    $.get(toqqreadtaskurl, (error, response, data) => {
-      if (logs) $.log(`${jsname}, 任务列表: ${data}`);
-      task = JSON.parse(data);
-  kz +=
-        `【现金余额】:${(task.data.user.amount / 10000).toFixed(2)}元\n` +
-        `【已开宝箱】:${task.data.treasureBox.count}个\n`;
-
-      tz +=
-        `【现金余额】:${(task.data.user.amount / 10000).toFixed(2)}元\n` +
-       
-        `【宝箱任务${task.data.treasureBox.count + 1}】:${
-          task.data.treasureBox.tipText
-        }\n`;
-
-      resolve();
-    });
-  });
-}
 
 
 // 更新
