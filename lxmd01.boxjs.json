@@ -32,8 +32,8 @@
       },
          
     ],
-    "repo": "https://github.com/lxmd01/JavaScript/blob/main/qqreads.js",
+    "repo": "https://github.com/lxmd01/JavaScript/blob/main/qqreadnode.js",
     "icons": ["https://raw.githubusercontent.com/lxmd01/JavaScript/main/qqread.jpg", "https://raw.githubusercontent.com/lxmd01/JavaScript/main/qqread.jpg"],
-    "script": "https://raw.githubusercontent.com/lxmd01/JavaScript/main/qqreads.js"
+    "script": "https://raw.githubusercontent.com/lxmd01/JavaScript/main/qqreadnode.js"
   }]
 }
