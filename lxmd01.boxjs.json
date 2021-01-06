@@ -30,7 +30,6 @@
         "type": "number",
         "desc": "可设置0 1 2 10 30 50 100  设置0关闭，根据需要来设值"
       },
-         
     ],
     "repo": "https://github.com/lxmd01/JavaScript/blob/main/qqreadnode.js",
     "icons": ["https://raw.githubusercontent.com/lxmd01/JavaScript/main/qqread.jpg", "https://raw.githubusercontent.com/lxmd01/JavaScript/main/qqread.jpg"],
