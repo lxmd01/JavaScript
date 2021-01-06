@@ -190,10 +190,6 @@ if (!COOKIE.qqreadbodyVal) {
     }
     if ("qeRW") {
       BOX= $.getval("qeRW");
-	 //设置为0 日常任务，设置为1 单开宝箱，设置为2 完整功能版
-if （BOX=0）{console.log(`============ 脚本模式为：${BOX},日常任务模式=============\n`);}
-else if (BOX=1）{console.log(`============ 脚本模式为：${BOX},单开宝箱模式=============\n`);}
-else if (BOX=2）{console.log(`============ 脚本模式为：${BOX},完整功能模式=============\n`);}    
     }  	
     const qeCount = ($.getval("qeCount") || "1") - 0;
     for (let i = 2; i <= qeCount; i++) {
@@ -302,7 +298,7 @@ async function all() {
       continue;
     }
     if (BOX == 0) {
-console.log(`============ 脚本模式为：${BOX},日常任务模式=============\n`)
+console.log(`============ 脚本模式为：${BOX},日常任务模式=============\n`);
       await qqreadtrack();//更新
       await qqreadconfig();//时长查询
       await qqreadwktime();//周时长查询
@@ -348,7 +344,7 @@ console.log(`============ 脚本模式为：${BOX},日常任务模式===========
 
 
     if (BOX == 1) {
-console.log(`============ 脚本模式为：${BOX},单开宝箱模式=============\n`)
+console.log(`============ 脚本模式为：${BOX},单开宝箱模式=============\n`);
       if (nowTimes.getHours() === 0 && (nowTimes.getMinutes() >= 0 && nowTimes.getMinutes() <= 59)) {
         await qqreadtrack();//更新
       }
@@ -367,7 +363,7 @@ console.log(`============ 脚本模式为：${BOX},单开宝箱模式===========
     }
 
     if (BOX == 2) {
-	    console.log(`============ 脚本模式为：${BOX},完整功能模式=============\n`)
+	    console.log(`============ 脚本模式为：${BOX},完整功能模式=============\n`);
       await qqreadtrack();//更新
       await qqreadconfig();//时长查询
       await qqreadwktime();//周时长查询
