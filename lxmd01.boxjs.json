@@ -3,7 +3,7 @@
   "name": "lxmd01 应用订阅",
   "author": "@lxmd01",
   "icon": "",
-  "repo": "https://github.com/lxmd01/JavaScript/",
+  "repo": "https://github.com/lxmd01/JavaScript",
   "apps": [
     {
        "id": "qqread",
@@ -40,7 +40,7 @@
         "desc": "当前模式设置为0 日常任务，设置为1 单开宝箱，设置为2 完整功能版"
       },         
     ],
-    "repo": "https://github.com/lxmd01/JavaScript",
+    "repo": "https://github.com/lxmd01/JavaScript/blob/main/qqreadnode.js",
     "icons": ["https://raw.githubusercontent.com/lxmd01/JavaScript/main/qqread.jpg", "https://raw.githubusercontent.com/lxmd01/JavaScript/main/qqread.jpg"],
     "script": "https://raw.githubusercontent.com/lxmd01/JavaScript/main/qqreadnode.js"
   }]
