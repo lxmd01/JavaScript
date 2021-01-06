@@ -1,9 +1,9 @@
 {
-  "id": "ziye.app.sub",
+  "id": "lxmd01.app.sub",
   "name": "ziye 应用订阅",
   "author": "@ZIYE",
   "icon": "",
-  "repo": "https://github.com/ziye12/JavaScript",
+  "repo": "https://github.com/lxmd01/qq",
   "apps": [{
     "id": "qqread",
     "name": "企鹅读书",
@@ -31,8 +31,8 @@
         "desc": "可设置0 1 2 10 30 50 100  设置0关闭，根据需要来设值"
       }
     ],
-    "repo": "https://github.com/ziye12/JavaScript/blob/master/Task/qqreads.js",
-    "icons": ["https://raw.githubusercontent.com/ziye12/JavaScript/master/qqread.jpg", "https://raw.githubusercontent.com/ziye12/JavaScript/master/qqread.jpg"],
-    "script": "https://raw.githubusercontent.com/ziye12/JavaScript/master/Task/qqreads.js"
+    "repo": "https://github.com/lxmd01/qq/blob/main/qqreadnode.js",
+    "icons": ["https://raw.githubusercontent.com/lxmd01/qq/main/qqread.jpg", "https://raw.githubusercontent.com/lxmd01/qq/main/qqread.jpg"],
+    "script": "https://raw.githubusercontent.com/lxmd01/qq/main/qqreadnode.js"
   }]
 }
