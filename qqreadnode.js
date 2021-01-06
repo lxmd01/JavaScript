@@ -106,9 +106,14 @@ if ($.isNode()) {
     new Date(new Date().toLocaleDateString()).getTime() - 8 * 60 * 60 * 1000;
 // 没有设置 QQREAD_CASH 则默认为 0 不提现
  CASH = process.env.QQREAD_CASH || 0;
+// 没有设置 QQREAD_BOX 则默认为 2 完整功能版
+ BOX = process.env.QQREAD_BOX || 2;
+
 } else {
   daytime = new Date(new Date().toLocaleDateString()).getTime();
 }
+
+
 
 if ($.isNode() &&process.env.QQREAD_BODY) {
   // 自定义多 cookie 之间连接的分隔符，默认为 \n 换行分割，不熟悉的不要改动和配置，为了兼容本地 node 执行
@@ -250,11 +255,9 @@ console.log(
 
 console.log(`============ 提现标准为：${CASH} =============\n`);
 //设置为0 日常任务，设置为1 单开宝箱，设置为2 完整功能版
-if （BOX=0）{console.log(`============ 脚本模式为：${BOX},日常任务模式=============\n`);
-}
-else if (BOX=1）{console.log(`============ 脚本模式为：${BOX},单开宝箱模式=============\n`);
-}
+if （BOX=0）{console.log(`============ 脚本模式为：${BOX},日常任务模式=============\n`);}
 else if (BOX=1）{console.log(`============ 脚本模式为：${BOX},单开宝箱模式=============\n`);}
+else if (BOX=2）{console.log(`============ 脚本模式为：${BOX},完整功能模式=============\n`);}
 
 
 !(async () => {
