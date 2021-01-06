@@ -188,7 +188,9 @@ if (!COOKIE.qqreadbodyVal) {
     if ("qeCASH") {
       CASH = $.getval("qeCASH");
     }
-
+    if ("qeRW") {
+      BOX= $.getval("qeRW");
+    }  	
     const qeCount = ($.getval("qeCount") || "1") - 0;
     for (let i = 2; i <= qeCount; i++) {
       if ($.getdata(`qqreadbd${i}`)) {
