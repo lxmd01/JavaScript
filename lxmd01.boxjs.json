@@ -1,7 +1,7 @@
 {
   "id": "lxmd01.app.sub",
   "name": "lxmd01 应用订阅",
-  "author": "@LXMD01",
+  "author": "@lxmd01",
   "icon": "",
   "repo": "https://github.com/lxmd01/JavaScript",
   "apps": [{
@@ -30,7 +30,7 @@
         "type": "number",
         "desc": "可设置0 1 2 10 30 50 100  设置0关闭，根据需要来设值"
       },
-         {
+      {
         "id": "qeCA",
         "name": "任务模式",
         "val": "2",
