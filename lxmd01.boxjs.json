@@ -35,7 +35,7 @@
         "name": "脚本功能",
         "val": "2",
         "type": "number",
-        "desc": "设置为0 日常任务，设置为1 单开宝箱，设置为2 完整功能版
+        "desc": "设置为0 日常任务，设置为1 单开宝箱，设置为2 完整功能版"
       }
     ],
     "repo": "https://github.com/lxmd01/JavaScript/blob/main/qqreadnode.js",
